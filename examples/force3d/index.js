@@ -94,7 +94,7 @@ const main = function () {
     var p = (document.location.search).replace(/(^\?)/,'').split("&").map(function(n){return n = n.split("="),this[n[0]] = n[1],this}.bind({}))[0];
     p['soul'] = k;
     var search =  '?' + $.param(p);
-  let href = `window.location.origin + window.location.pathname + search;
+  let href = window.location.origin + window.location.pathname + search;
   return `<li class="truncate node-link inline" title="${soul} -> ${link} (${new Date(at._['>'][k])})"><a target="_${soul}" href="${href}">${k}</a></li>`
 }).join(`\n`)}</ol>
   `;
