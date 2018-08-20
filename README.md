@@ -1,6 +1,9 @@
 # gun-view
 Gun to d3 force graph data loader.
 
+**ONLY STUDY PURPOUSES
+
+
 Required params in the url!
 
 Example:
