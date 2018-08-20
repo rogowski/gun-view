@@ -5,4 +5,4 @@ Required params in the url!
 
 Example:
 
-`force3d/index.html?soul=baristo&peer=https://nanoservice.com.br/superpeer/gun`
+`force3d/index.html?soul=MYNODESOUL&peer=https://YOURSUPERPEER/gun`

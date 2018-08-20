@@ -3,12 +3,12 @@ const gData = {
   links: []
 };
 var gun;
+var url = new URL(location.href);
+var mysoul = url.searchParams.get("soul");
+var peers = url.searchParams.get("peer");
 const main = function () {
   //////////////////////////////////////////////////////////
   /// APP
-  var url = new URL(location.href);
-  var mysoul = url.searchParams.get("soul");
-  var peers = url.searchParams.get("peer");
 
   if (peers) {
     peers = peers.split(',');
@@ -92,8 +92,8 @@ const main = function () {
 <ol class="inline node-links">${links.map((k)=>{
   let link = at[k] ? at[k]['#'] : '';
     var p = (document.location.search).replace(/(^\?)/,'').split("&").map(function(n){return n = n.split("="),this[n[0]] = n[1],this}.bind({}))[0];
-    p['soul'] = k;
-    var search =  '?' + $.param(p);
+    psoul = k;
+    var search =  `?soul=${k}&peer=${p.peer}`;
   let href = window.location.origin + window.location.pathname + search;
   return `<li class="truncate node-link inline" title="${soul} -> ${link} (${new Date(at._['>'][k])})"><a target="_${soul}" href="${href}">${k}</a></li>`
 }).join(`\n`)}</ol>
