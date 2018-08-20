@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Gun View</title>
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://rawgit.com/rogowski/gun-view/master/examples/force3d/index.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- GRAPH CONTAINER -->
+  <div id="3d-graph"></div>
+
+  <!-- ITEM VIEW CONTAINER -->
+  <div id="view-item" class="hidden">
+
+    <div class="control text-right">
+      <!--<a>&times; &#95; &square;</a>-->
+      <a>&#95;</a>
+      <a>&square;</a>
+    </div>
+
+    <div class="source-pretty"></div>
+
+    <div class="source hidden">
+      SOUL: [
+      <span class="soul"></span>]
+      <pre></pre>
+    </div>
+    <!--<a class="node-show-source">Show source</a>-->
+  </div>
+
+  <!-- UI -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <!-- GUN -->
+  <script type="text/javascript" src="https://rawgit.com/amark/gun/master/gun.js"></script>
+  <script type="text/javascript" src="https://rawgit.com/amark/gun/master/nts.js"></script>
+  <script type="text/javascript" src="https://rawgit.com/amark/gun/master/lib/time.js"></script>
+  <script type="text/javascript" src="https://rawgit.com/amark/gun/master/lib/unset.js"></script>
+  <script type="text/javascript" src="https://rawgit.com/amark/gun/master/lib/open.js"></script>
+  <script type="text/javascript" src="https://rawgit.com/amark/gun/master/sea.js"></script>
+  
+  <!-- CHART -->
+  <script type="text/javascript" src="https://unpkg.com/3d-force-graph@1.37.0/dist/3d-force-graph.js"></script>
+  
+  <!-- CHART AND GUN INTEGRATION -->
+  <script type="text/javascript" src="https://rawgit.com/rogowski/gun-view/master/gun2d3force.js"></script>
+  
+  
+  <!-- MY APP THINGS -->
+  <script type="text/javascript" src="https://rawgit.com/rogowski/gun-view/master/examples/force3d/index.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+.hidden {
+  display: none;
+}
+
+.monospace {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.label {
+  padding: 3px;
+}
+
+.label::after {
+  content: ': ';
+}
+
+a:link {
+  font-family: 'Segoe UI Symbol' !important;
+}
+
+.truncate {
+  /* Must not be `display: flex` */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#view-item {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 40%;
+  width: 30%;
+  border: 1px solid black;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+}
+
+#view-item.collapsed {
+  height: 3%;
+}
+
+#view-item .soul {
+  font-weight: bold;
+}
+
+#view-item .control {
+  margin: -5px -5px 5px -5px;
+  padding: 1px 0 5px 0;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#view-item h4 {
+  border-bottom: 1px solid #ccc;
+}
+
+#view-item .node-links {
+  padding: 3px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.node-link {
+  border: 1px solid rgb(191, 191, 191);
+  border-radius: 5px;
+  background: transparent;
+  font-size: 0.7em;
+  line-height: 1.0em;
+  padding: 3px 5px;
+}
+
+.node-link:hover {
+  background: #fff;
+}
+
+.inline li {
+  display: inline-block;
+  text-align: center;
+  margin: 3px;
+}
+
+.node-attributes .value {
+  border: 1px solid #666;
+  background: #eee;
+}
+
+/*
+.node-attributes .value:hover {
+  border: 1px dashed #ccc;
+  z-index: 1000;
+  background: rgba(255,255,255,0.7);
+} */
