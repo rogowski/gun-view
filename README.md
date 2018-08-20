@@ -9,3 +9,5 @@ Required params in the url!
 Example:
 
 `force3d/index.html?soul=MYNODESOUL&peer=https://YOURSUPERPEER/gun`
+
+![Screenshot](examples/force3d/screenshot.png)
